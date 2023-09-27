@@ -1,3 +1,5 @@
+print("hello world")
+
 '''
 Author : Hesam Akbari
 Python2 : second session processing Data using files in python
