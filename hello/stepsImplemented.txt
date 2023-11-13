@@ -1,0 +1,34 @@
+
+# Steps taken to create a hello app under the hello_world project.
+
+1 --  Created a Virtual Environment.
+    python -m venv venv  
+    venv\Scripts\activate 
+
+2 -- Installed Django into that venv
+    pip install Django
+
+3 -- Created a Django Project hello_world
+        django-admin startproject helloworld 
+
+4 -- Created a django app hello
+    cd helloworld 
+    python ./manage.py startapp hello_world
+
+5 -- created a web app.
+
+6 -- into the setting at hello_world project settings.py include the hello app into the installed apps section.
+
+
+6 -- into that hello app
+
+    -- two methods are created hello_world and intro
+    -- two methods are well url'd into the hello app urls.py
+    --  then the hello app url as a whole in url'd into the hello_world project app url
+
+7 -- make the required migrations 
+    python manage.py makemigrations
+    python manage.py migrate
+
+8 -- run the django server
+    python manage.py runserver
